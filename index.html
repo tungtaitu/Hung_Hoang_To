@@ -151,23 +151,23 @@
             window.addEventListener('resize', resizeCanvas);
 
             const CHARACTERS = [
-                { name: 'Hoàng Tố 1', score: 5, imageSrc: 'https://i.ibb.co/ntVYmKZ/73aceb5c-c5a3-4d83-ab41-5bf50d8fdf1e-removalai-preview.png', special: 'x2' },
-                { name: 'Hoàng Tố 2', score: 5, imageSrc: 'https://i.ibb.co/1GYqDSNt/e2b02ee2-2eaf-4565-95f4-a77d0ebea415-removalai-preview.png', special: 'x2' },
-                { name: 'Hoàng Tố 3', score: 5, imageSrc: 'https://i.ibb.co/chLfLH25/ec7921682c6a9a34c37b-removebg-preview.png', special: 'x2' },
-                { name: 'Hoàng Tố 4', score: 5, imageSrc: 'https://i.ibb.co/LdKg1324/mat2.png', special: 'x2' },
+                { name: 'Hoàng Tố 1', score: 0.5, imageSrc: 'https://i.ibb.co/ntVYmKZ/73aceb5c-c5a3-4d83-ab41-5bf50d8fdf1e-removalai-preview.png', special: 'x2' },
+                { name: 'Hoàng Tố 2', score: 0.5, imageSrc: 'https://i.ibb.co/1GYqDSNt/e2b02ee2-2eaf-4565-95f4-a77d0ebea415-removalai-preview.png', special: 'x2' },
+                { name: 'Hoàng Tố 3', score: 0.5, imageSrc: 'https://i.ibb.co/chLfLH25/ec7921682c6a9a34c37b-removebg-preview.png', special: 'x2' },
+                { name: 'Hoàng Tố 4', score: 0.5, imageSrc: 'https://i.ibb.co/LdKg1324/mat2.png', special: 'x2' },
                 { name: 'Hồng Tỷ', score: 2, imageSrc: 'https://i.ibb.co/JRdwYp5F/9c10198f-142d-4cd6-99cc-3a4b6bb06a56-removalai-preview.png' },
                 { name: 'Bò Tuyết Trinh', score: 3, imageSrc: 'https://i.ibb.co/rG2DTwwC/b3e4e213-356a-4339-8e66-ea6d1b98c780-removalai-preview.png' },
                 { name: 'Nhân vật 7', score: 2, imageSrc: 'https://i.ibb.co/ZRCmCyLr/ccf89daa-3467-4c41-a4c4-9a3eba2bbb56-removalai-preview.png' },
-                { name: 'Yến Nhi lớn', score: 4, imageSrc: 'https://i.ibb.co/gbgzm70Q/d72e738e-0897-47fe-8ffe-da92d842d1a5-removalai-preview.png' },
+                { name: 'Yến Nhi lớn', score: 2, imageSrc: 'https://i.ibb.co/gbgzm70Q/d72e738e-0897-47fe-8ffe-da92d842d1a5-removalai-preview.png' },
                 { name: 'Nhân vật 6', score: 3, imageSrc: 'https://i.ibb.co/Dgsk4959/e02c35a5-2906-49e7-bbd4-72d5d8953fbe-removalai-preview.png' },
                 { name: 'Yến Nhi nhỏ', score: 2, imageSrc: 'https://i.ibb.co/0jr6YrSL/e2db7580-d4bb-43e6-b74c-c0132a0566e8-removalai-preview.png' },
                 { name: 'Phưn Đần', score: 1, imageSrc: 'https://i.ibb.co/ZpCWmFGJ/6a5175d1-4f4c-409f-8cbe-61dd49695ece-removalai-preview.png' },
-                { name: 'Đầu Bò', score: 0, icon: '🐮', imageSrc: null },
-                { name: 'Đầu Cừu', score: 0, icon: '🐑', imageSrc: null },
+                { name: 'Đầu Bò', score: 0.25, icon: '🐮', imageSrc: null },
+                { name: 'Đầu Cừu', score: 0.25, icon: '🐑', imageSrc: null },
                 { name: 'Gà', score: 1, icon: '🐔', imageSrc: null },
-                { name: 'Bom 1', score: -5, imageSrc: 'https://i.ibb.co/Cs4N2M6n/pngwing-com.png', special: 'bomb' },
-                { name: 'Bom 2', score: -5, imageSrc: 'https://i.ibb.co/Cs4N2M6n/pngwing-com.png', special: 'bomb' },
-                { name: 'Bom 3', score: -5, imageSrc: 'https://i.ibb.co/Cs4N2M6n/pngwing-com.png', special: 'bomb' }
+                { name: 'Bom 1', score: -50, imageSrc: 'https://i.ibb.co/Cs4N2M6n/pngwing-com.png', special: 'bomb' },
+                { name: 'Bom 2', score: -50, imageSrc: 'https://i.ibb.co/Cs4N2M6n/pngwing-com.png', special: 'bomb' },
+                { name: 'Bom 3', score: -50, imageSrc: 'https://i.ibb.co/Cs4N2M6n/pngwing-com.png', special: 'bomb' }
             ];
 
             let player, fallingItems, score, gameOver, animationId, difficulty, gameTimer, itemInterval;
